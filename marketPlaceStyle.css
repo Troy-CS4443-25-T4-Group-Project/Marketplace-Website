@@ -1,0 +1,20 @@
+/* I never understood the relational measurements 
+	that we're supposed to use, 
+	replace the px later */
+	
+html {
+	font-size: 16px;
+}
+
+h1 {
+	font-family: "Roboto", helvetica, arial, sans-serif;
+	background-color: #459ced;
+	padding: 5px;
+	font-size: 40px;
+	
+}
+
+footer {
+	background-color: #769ab5;
+	font-size: 12px;
+}
