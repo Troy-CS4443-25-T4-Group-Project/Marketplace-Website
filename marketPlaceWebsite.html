@@ -8,21 +8,59 @@
 </head>
 
 <body>
-	<h1> Art Market Place </h1>
+	<header>
+		<h1> Art Market Place </h1>
+		
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="artists.html">Artists</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>	</header>
 	
-	<nav>
-		<a href="#">Link1</a>
-		<a href="#">Link2</a>
-		<a href="#">Link3</a>
-		<a href="#">Link4</a>
-	</nav>
-	<br>
-	
-	<main>
-		<figure class="artShowcase monaLisa">
-			<img src="art/monaLisa.jpg" style="width: 200px" alt="monaLisa.jpg"/>
-			<figcaption> Mona Lisa </figcaption>
-		</figure>
+	<div class="breadcrumb-nav">
+		<div class="container">
+			<nav aria-label="breadcrumb">
+				<ol>
+					<li><a href="index.html">Home</a></li>
+					<li>Gallery</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+		<main>
+		<div class="main-content-wrapper">
+			<aside class="sidebar">
+				<nav class="sidebar-nav">
+					<h3>Categories</h3>
+					<ul>
+						<li><a href="#">Paintings</a></li>
+						<li><a href="#">Sculptures</a></li>
+						<li><a href="#">Photography</a></li>
+						<li><a href="#">Digital Art</a></li>
+						<li><a href="#">Mixed Media</a></li>
+					</ul>
+					
+					<h3>Filter By</h3>
+					<ul>
+						<li><a href="#">Price Range</a></li>
+						<li><a href="#">Artist</a></li>
+						<li><a href="#">Style</a></li>
+						<li><a href="#">Medium</a></li>
+					</ul>
+				</nav>
+			</aside>
+			
+			<div class="content">
+				<figure class="artShowcase monaLisa">
+					<img src="art/monaLisa.jpg" style="width: 200px" alt="monaLisa.jpg"/>
+					<figcaption> Mona Lisa </figcaption>
+				</figure>
+			</div>
+		</div>
 	</main>
 	
 	<footer>
