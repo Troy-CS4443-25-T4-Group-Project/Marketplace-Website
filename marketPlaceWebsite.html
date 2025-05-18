@@ -3,15 +3,18 @@
 
 <head>
 	<title> Art Market Place </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="marketPlaceStyle.css">
+	<!-- Font Awesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 	<header>
 		<h1> Art Market Place </h1>
-		
-		<nav class="main-nav">
+				<nav class="main-nav">
 			<ul>
 				<li><a href="index.html" class="active">Home</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
@@ -19,7 +22,19 @@
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
-		</nav>	</header>
+			
+			<div class="user-nav">
+				<a href="cart.html" class="cart-link">
+					<i class="fas fa-shopping-cart"></i>
+					<span class="cart-count">0</span>
+				</a>
+				<a href="account.html" class="account-link">
+					<i class="fas fa-user"></i>
+					<span>Account</span>
+				</a>
+			</div>
+		</nav>
+	</header>
 	
 	<div class="breadcrumb-nav">
 		<div class="container">

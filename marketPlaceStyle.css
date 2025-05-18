@@ -32,7 +32,11 @@ h1 {
 /* Navigation styles */
 .main-nav {
 	background-color: #2980b9;
-	padding: 0 20px;
+	padding: 0 120px; /* Increased padding to make room for the centered nav */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
 }
 
 .main-nav ul {
@@ -42,6 +46,11 @@ h1 {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: auto; /* Allow natural width */
+	min-width: 400px; /* Ensure minimum width */
 }
 
 .main-nav li {
@@ -63,6 +72,31 @@ h1 {
 
 .main-nav a.active {
 	background-color: #1c638e;
+}
+
+/* User navigation */
+.user-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    z-index: 1; /* Ensures it appears above the centered navigation */
+}
+
+.user-nav a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.user-nav a:hover {
+    background-color: #3498db;
+}
+
+.user-nav i {
+    margin-right: 5px;
 }
 
 /* Breadcrumb navigation */
@@ -168,6 +202,46 @@ main {
     color: #2980b9;
 }
 
+.filter-heading {
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.price-filter {
+    margin: 10px 0 20px;
+}
+
+.price-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.price-inputs input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.btn-apply-filter {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.btn-apply-filter:hover {
+    background-color: #3498db;
+}
+
 .content {
     flex: 1;
 }
@@ -192,18 +266,94 @@ main {
 
 /* Footer styles */
 footer {
-	background-color: #769ab5;
+	background-color: #2b506b;
 	color: white;
-	text-align: center;
-	padding: 20px;
 	font-size: 0.9rem;
-	margin-top: 30px;
+	margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.footer-section h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links li {
+    margin-bottom: 8px;
+}
+
+.footer-section.links a {
+    color: #eeeeee;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-section.links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #a3d0f5;
+}
+
+.footer-bottom {
+    background-color: #15304a;
+    padding: 15px 20px;
+    text-align: center;
 }
 
 /* Mobile responsive navigation */
 @media screen and (max-width: 768px) {
+    .main-nav {
+        flex-direction: column;
+        padding: 0;
+    }
+    
     .main-nav ul {
         flex-direction: column;
+        position: static;
+        transform: none;
+        width: 100%;
     }
 
     .main-nav a {
@@ -213,6 +363,20 @@ footer {
 
     .main-nav li:last-child a {
         border-bottom: none;
+    }
+      .user-nav {
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        background-color: #1c638e;
+        padding: 10px 0;
+        order: -1; /* Display user-nav before the main navigation on mobile */
+    }
+    
+    .user-nav a {
+        flex: 1;
+        justify-content: center;
+        padding: 10px;
     }
     
     h1 {
