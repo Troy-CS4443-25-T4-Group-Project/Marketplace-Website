@@ -28,6 +28,15 @@ h1 {
 	color: white;
 	text-align: center;
 }
+/* I added this so it wouldn't look so plain you can take
+it out if you don't like it or change it, i'll understand */
+.fancy-heading {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  color: #4B0082;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: 2px;
+}
 
 /* Navigation styles */
 .main-nav {

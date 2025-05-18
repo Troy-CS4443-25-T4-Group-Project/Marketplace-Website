@@ -2,6 +2,9 @@
 <html lang="EN">
 
 <head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
 	<title> Art Market Place </title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +16,20 @@
 
 <body>
 	<header>
-		<h1> Art Market Place </h1>
-				<nav class="main-nav">
+		<!-- <h1> Art Market Place </h1> -->
+		<!-- check .css for notes on this-->
+		<h1 class = "fancy-heading">A Market Place of Art </h1>
+		
+		<nav class="main-nav">
 			<ul>
-				<li><a href="index.html" class="active">Home</a></li>
+				<!-- <li><a href="index.html" class="active">Home</a></li> -->
+				
+				<!-- here I change the home to an onclick that will direct back to
+				instead of having to create another html.  I kept the one above incase you
+				want to switch it back-->
+				
+				<li><a href="#" onclick="navigate('home')">Home</a></li>
+				
 				<li><a href="gallery.html">Gallery</a></li>
 				<li><a href="artists.html">Artists</a></li>
 				<li><a href="about.html">About Us</a></li>
