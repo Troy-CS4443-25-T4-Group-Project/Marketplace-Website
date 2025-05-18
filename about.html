@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<title> Art Market Place </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="marketPlaceStyle.css">
+	<!-- Font Awesome for icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+	<header>
+		<!-- <h1> Art Market Place </h1> -->
+		<!-- check .css for notes on this-->
+		<h1 class = "fancy-heading">A Market Place of Art </h1>
+		
+		<nav class="main-nav">
+			<ul>
+				<!-- <li><a href="index.html" class="active">Home</a></li> -->
+				
+				<!-- here I change the home to an onclick that will direct back to
+				instead of having to create another html.  I kept the one above incase you
+				want to switch it back-->
+				
+				<li><a href="#" onclick="navigate('home')">Home</a></li>
+				
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="artists.html">Artists</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			
+			<div class="user-nav">
+				<a href="cart.html" class="cart-link">
+					<i class="fas fa-shopping-cart"></i>
+					<span class="cart-count">0</span>
+				</a>
+				<a href="account.html" class="account-link">
+					<i class="fas fa-user"></i>
+					<span>Account</span>
+				</a>
+			</div>
+		</nav>
+	</header>
+	
+	<div class="breadcrumb-nav">
+		<div class="container">
+			<nav aria-label="breadcrumb">
+				<ol>
+					<li><a href="index.html">Home</a></li>
+					<li>About us</li>
+				</ol>
+			</nav>
+		</div>
+	</div>
+		<main>
+		<div class="main-content-wrapper">
+			
+			
+			<div class="content">
+				<section class="teamMemberInfo">
+					<figure class="artShowcase monaLisa">
+						
+						<img src="art/austin.jpg" style="width: 200px" alt="Austin.jpg"/>
+						<figcaption> Austin Cain </figcaption>
+						<p> SAMPLE TEXT FOR AUSTIN </p>
+					</figure>
+				</section>
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<p> Created by Austin Cain, Brandon Horn, Phoenix Hussey, Rhett Parker, James Ward, Teresa Williams</p>
+	</footer>
+</body>
+
+</html>
