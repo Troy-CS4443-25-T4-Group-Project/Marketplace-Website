@@ -406,10 +406,18 @@ footer {
         display: none; /* Hide breadcrumbs on mobile to save space */
     }
 	
+
+} /* End Mobile Styling */
+
+
+
+/* Styling for About Us page content */
 	.teamMemberInfo {
 		display: grid;
 		align-items: center;
 		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: 5px;
 	}
-}
+	
+	
+	/*  */
