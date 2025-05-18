@@ -417,6 +417,8 @@ footer {
 		align-items: center;
 		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: 5px;
+		
+		border: 2px solid black;
 	}
 	
 	
