@@ -2,23 +2,19 @@
 <html lang="EN">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	<title> Art Market Place </title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="marketPlaceStyle.css">
-	<!-- Font Awesome for icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Art Market Place</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="marketPlaceStyle.css">
+    <link rel="stylesheet" href="artwork-styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 	<header>
-		<!-- <h1> Art Market Place </h1> -->
-		<!-- check .css for notes on this-->
-		<h1 class = "fancy-heading">A Market Place of Art </h1>
+		<h1>Art Market Place</h1>
 		
 		<nav class="main-nav">
 			<ul>
@@ -28,12 +24,11 @@
 				instead of having to create another html.  I kept the one above incase you
 				want to switch it back-->
 				
-				<li><a href="marketPlaceWebsite.html" onclick="navigate('home')">Home</a></li>
-				
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="artists.html">Artists</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="marketplace-integrated.html">Home</a></li>
+                		<li><a href="gallery.html">Gallery</a></li>
+                		<li><a href="artists.html">Artists</a></li>
+                		<li><a href="about.html" class ="active">About Us</a></li>
+                		<li><a href="contact.html">Contact</a></li>
 			</ul>
 			
 			<div class="user-nav">
@@ -53,7 +48,7 @@
 		<div class="container">
 			<nav aria-label="breadcrumb">
 				<ol>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="marketplace-integrated.html">Home</a></li>
 					<li>About us</li>
 				</ol>
 			</nav>
@@ -95,7 +90,7 @@
 						
 						
 					</figure>
-					<p class="memberInfo"> Phoenix Hussey senior in Computer Science. He is currently pursuing the Aviation field for a commercial pilot's license and A&P with the FAA. He is currently employed as a structural repairer for the Alabama Army National Guard and wants to pursue aviation full time with a degree in Computer Science to boost his resume. </p>
+					<p class="memberInfo"> Phoenix Hussey is a senior in Computer Science. He is currently pursuing the Aviation field for a commercial pilot's license and A&P with the FAA. He is currently employed as a structural repairer for the Alabama Army National Guard and wants to pursue aviation full time with a degree in Computer Science to boost his resume. </p>
 				</div>
 				<br>
 				
@@ -143,8 +138,40 @@
 	</main>
 	
 	<footer>
-		<p> Created by Austin Cain, Brandon Horn, Phoenix Hussey, Rhett Parker, James Ward, Teresa Williams</p>
-	</footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Art Marketplace</h3>
+                <p>A platform connecting artists with art lovers and collectors around the world.</p>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> contact@artmarketplace.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Created by Austin Cain, Brandon Horn, Phoenix Hussey, Rhett Parker, James Ward, Teresa Williams</p>
+            <p>&copy; 2025 Art Marketplace. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
