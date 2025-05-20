@@ -1,0 +1,15 @@
+.gallery-header {
+        margin-bottom: 30px;
+    }
+    
+    .no-results {
+        text-align: center;
+        padding: 50px 0;
+        color: #7f8c8d;
+    }
+    
+    .no-results i {
+        font-size: 80px;
+        margin-bottom: 20px;
+        color: #bdc3c7;
+    }

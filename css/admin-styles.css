@@ -1,0 +1,56 @@
+/* Admin page specific styles */
+.admin-header {
+    background-color: #395075;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+
+.admin-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.admin-header p {
+    margin: 10px 0 0 0;
+    opacity: 0.8;
+}
+
+.admin-back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #d9a0d8;
+    text-decoration: none;
+}
+
+.admin-back-link:hover {
+    text-decoration: underline;
+}
+
+.admin-content {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Add artwork button styles */
+.add-artwork-button-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.add-artwork-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #395075;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+
+.add-artwork-button:hover {
+    background-color: #4563aa;
+}

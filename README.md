@@ -1,79 +1,72 @@
 # Art Marketplace Website
 
-A comprehensive web platform for artists to showcase and sell their artwork to collectors and art enthusiasts.
+A simplified web platform for artists to showcase their artwork.
+
+## Project Overview
+
+This project is a streamlined art marketplace that allows users to:
+- Browse artworks by category
+- View featured artworks on the homepage
+- Add new artwork through a simple admin interface
 
 ## Project Structure
 
-- **marketPlaceWebsite.html**: Original HTML file
-- **marketplace-integrated.html**: Updated HTML file with database integration
-- **marketPlaceStyle.css**: Main CSS styles
-- **artwork-styles.css**: CSS specifically for artwork display
-- **reset.css**: CSS reset file
-- **frontend-database-integration.js**: JS file for connecting frontend to database
-- **database.js**: Sequelize ORM setup for database models
-- **database_schema.sql**: SQL database schema
-- **database_schema_er_diagram.md**: Documentation of database relationships
+### Main Files
+- **index.php**: Homepage with featured artwork display
+- **gallery.php**: Gallery page with artwork filtering by category
+- **about.php**: Information about the team members
+- **admin.php**: Simple admin interface for adding new artwork
 
-## Database Schema Overview
+### Directory Structure
+- **css/**: Contains all CSS files
+  - `marketPlaceStyle.css`: Main styling
+  - `artwork-styles.css`: Styling for artwork display
+  - `footer-styles.css`: Footer styling
+  - `about-styles.css`: About page styling
+  - `reset.css`: CSS reset
+- **includes/**: PHP includes for common elements
+  - `header.php`: Common header across all pages
+  - `footer.php`: Common footer across all pages
+  - `config.php`: Configuration settings
+  - `database.php`: Database connection and setup
+- **art/**: Directory for artwork images
+  - `paintings/`: Painting images
+  - `photography/`: Photography images
+  - `sculptures/`: Sculpture images
 
-The database for the Art Marketplace includes the following main entities:
+## Database Structure
 
-### Core Entities
+The database has been simplified to just two tables:
 
-1. **Users**
-   - Stores user authentication and profile information
-   - Differentiates between regular users, artists, and administrators
+- **Categories**: Stores art categories (Paintings, Sculptures, Photography, etc.)
+- **Artworks**: Stores artwork information (title, artist, price, image, etc.)
 
-2. **Artist Profiles**
-   - Extended information for users who are artists
-   - Professional details like experience, education, exhibitions
+For more details, see [database-documentation.md](database-documentation.md).
 
-3. **Artworks**
-   - Central entity for all art pieces in the marketplace
-   - Details include dimensions, pricing, materials, creation date
-   - Status tracking (available, sold, reserved)
+## Features
 
-4. **Categories**
-   - Hierarchical structure for artwork classification
-   - Main categories include Paintings, Sculptures, Photography, etc.
+- **Dynamic Content**: Artworks and categories are stored in and retrieved from a database
+- **Responsive Design**: The website is designed to work on various screen sizes
+- **Category Filtering**: Users can filter artworks by category
+- **Admin Interface**: Simple interface for adding new artwork to the database
+- **Image Upload**: Support for uploading artwork images
 
-### Supporting Entities
+## Setup Instructions
 
-- **Styles**: Different art styles (Abstract, Realism, etc.)
-- **Media Types**: Materials and techniques used (Oil, Acrylic, Digital, etc.)
-- **Tags**: Keywords for improved artwork searchability
-- **Artwork Images**: Multiple images per artwork
+1. Clone the repository to your local environment
+2. Set up a web server with PHP and MySQL (e.g., XAMPP, WAMP)
+3. Place the project files in your web server's document root
+4. Access the website through your web browser
+5. The database and tables will be automatically created on first access
 
-### User Interaction Entities
+## Database Auto-Initialization
 
-- **Wishlists & Wishlist Items**: Save favorite artworks
-- **Shopping Carts & Cart Items**: E-commerce functionality
-- **Orders & Order Items**: Purchase history and details
-- **Reviews**: User feedback and ratings
+The website includes an automatic database setup system that:
+- Creates the database if it doesn't exist
+- Creates the necessary tables if they don't exist
+- Populates the tables with sample data
 
-### Communication & Content
-
-- **Messages**: Direct communication between users
-- **Blog Posts**: Content marketing
-- **Events**: Exhibitions, auctions, workshops
-
-## Frontend-Database Integration
-
-The project includes JavaScript that enables the frontend to communicate with the backend database through RESTful API calls. Key features include:
-
-- Dynamic loading of artworks from the database
-- Filtering by category, style, medium, and price
-- User authentication and account management
-- Shopping cart and wishlist functionality
-- Artist and artwork details
-
-## Running the Project
-
-1. Set up the database using the SQL schema in `database_schema.sql`
-2. Configure a `.env` file with your database credentials
-3. Install Node.js dependencies: `npm install express sequelize mysql2 dotenv`
-4. Set up the backend API server (not included)
-5. Open `marketplace-integrated.html` in your browser
+This means no manual database setup is required.
 
 ## Development Team
 

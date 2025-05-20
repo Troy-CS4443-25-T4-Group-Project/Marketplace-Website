@@ -1,0 +1,18 @@
+# Enable PHP error display
+php_flag display_errors on
+php_value error_reporting E_ALL
+
+# Serve PHP files as HTML if needed
+AddType application/x-httpd-php .php
+
+# Keep directory browsing enabled for development
+Options +Indexes
+
+# Set default character set
+AddDefaultCharset UTF-8
+
+# Handle 404 errors
+ErrorDocument 404 /Marketplace-Website/index.php
+
+# Handle 500 errors
+ErrorDocument 500 /Marketplace-Website/index.php
