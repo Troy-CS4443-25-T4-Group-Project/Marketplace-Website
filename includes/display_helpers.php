@@ -19,6 +19,7 @@ function renderArtworkCard($artwork) {
     if (!empty($artwork['image_url']) && file_exists($artwork['image_url'])) {
         $html .= '<img src="' . $artwork['image_url'] . '" alt="' . htmlspecialchars($artwork['title']) . '">';
     } else {
+        // Fallback image if no URL or file not found
         $html .= '<img src="art/monaLisa.jpg" alt="' . htmlspecialchars($artwork['title']) . '">';
     }
     
@@ -79,14 +80,6 @@ function renderCategorySidebar($categories, $active_category_id = null) {
     }
     
     $html .= '</ul>';
-    $html .= '<h3>Filter By</h3>';
-    $html .= '<ul>';
-    $html .= '<li><a href="#">Price Range</a></li>';
-    $html .= '<li><a href="#">Artist</a></li>';
-    $html .= '<li><a href="#">Style</a></li>';
-    $html .= '<li><a href="#">Medium</a></li>';
-    $html .= '</ul>';
-    $html .= '</nav>';
     $html .= '</aside>';
     
     return $html;
