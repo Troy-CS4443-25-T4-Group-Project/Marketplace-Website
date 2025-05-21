@@ -13,7 +13,7 @@ $team_members = [
     ],
     [
         'name' => 'Phoenix Hussey',
-        'image' => 'images/team/phoenix.jpg'
+        'image' => 'images/team/phoenix.jpg',
         'bio' => 'Phoenix Hussey is a senior in Computer Science. He is currently pursuing the Aviation field for a commercial pilot\'s license and A&P with the FAA. He is currently employed as a structural repairer for the Alabama Army National Guard and wants to pursue aviation full time with a degree in Computer Science to boost his resume.'
     ],
     [
