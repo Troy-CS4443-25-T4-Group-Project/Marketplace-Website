@@ -14,14 +14,16 @@ $is_production = (strpos($_SERVER['SERVER_NAME'] ?? '', 'localhost') === false &
 
 // Database configuration - automatically switches between production and local
 if ($is_production) {
-    // Production database (your shared/hosted database)
-    define('DB_HOST', 'your-production-db-host.com');  // Change to your production host
-    define('DB_NAME', 'your_production_db');           // Change to your production username
-    define('DB_USER', 'your_production_user');         // Change to your production username
-    define('DB_PASS', 'your_production_password');     // Change to your production password
+    // Production database
+    define('DB_HOST', 'sql211.infinityfree.com');
+    define('DB_NAME', 'if0_38904230_art_marketplace');
+    define('DB_USER', 'if0_38904230');
+    // Password removed for standard security practices
+    // Uncomment the line below to set the password for production
+    // define('DB_PASS', 'your_production_password_here');
     
     // Production site URL
-    define('SITE_URL', 'https://your-production-site.com'); // Change to your production URL
+    define('SITE_URL', 'https://troyjw.ct.ws/marketplace');
 } else {
     // Local development database
     define('DB_HOST', 'localhost');

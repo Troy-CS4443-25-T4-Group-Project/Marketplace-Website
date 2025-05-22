@@ -20,8 +20,11 @@ This project is a streamlined art marketplace that allows users to:
 ### Directory Structure
 - **css/**: Contains all CSS files
   - `marketPlaceStyle.css`: Main styling
+  - `admin-styles.css`: Interface styling for adding artwork
+  - `artwork-detail.css`: Styling for individual artwork display
   - `artwork-styles.css`: Styling for artwork display
   - `footer-styles.css`: Footer styling
+  - `gallery-styles.css`: Gallery page styling
   - `about-styles.css`: About page styling
   - `reset.css`: CSS reset
 - **includes/**: PHP includes for common elements
@@ -29,6 +32,8 @@ This project is a streamlined art marketplace that allows users to:
   - `footer.php`: Common footer across all pages
   - `config.php`: Configuration settings
   - `database.php`: Database connection and setup
+  - `functions.php`: Common functions
+  - `display_helpers.php`: Functions for displaying artwork
 - **art/**: Directory for artwork images
   - `paintings/`: Painting images
   - `photography/`: Photography images
@@ -70,4 +75,4 @@ This means no manual database setup is required.
 
 ## Development Team
 
-Created by Austin Cain, Brandon Horn, Phoenix Hussey, Rhett Parker, James Ward, Teresa Williams
+Created by Austin Cain, Phoenix Hussey, James Ward, Teresa Williams

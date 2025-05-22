@@ -38,9 +38,6 @@ if (!$artwork) {
     $page_title = $artwork['title'];
 }
 
-// Note: artwork-detail.css is now included in the header.php file
-// No need for $extra_css here
-
 // Include the header
 include 'includes/header.php';
 
